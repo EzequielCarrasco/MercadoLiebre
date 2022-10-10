@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "test": "nodemon src/app.js"
+    "test": "nodemon EntregaMercadoLiebre/app.js",
+    "start": "node EntregaMercadoLiebre/app.js"
   },
   "author": "",
   "license": "ISC",

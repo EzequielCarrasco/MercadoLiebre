@@ -1,10 +1,25 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
 
-const publicPath = path.resolve(__dirname, './public');
-app.use(express.static(publicPath) );
+const rutasHome = require('./routers/home.js');
+const rutasLogin = require('./routers/login.js');
+const rutasRegister = require('./routers/register.js');
+
+
+
+app.set('view engine', 'ejs');
+
+/*const publicPath = path.resolve(__dirname, './public');
+app.use(express.static(publicPath) );*/
+
+
+/*Esto permite que se vea el css del html*/
+const path=require('path');
+const publicPath=path.join(__dirname,'/public');
+app.use(express.static(__dirname + '/public'));
+
+
+
 
 const PORT = process.env.PORT || 3000
 
@@ -13,15 +28,15 @@ app.listen(PORT, () => {
 });
 
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'));
-});
+app.use('/', rutasHome);
 
-app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'));
-});
+app.use('/login', rutasLogin);
 
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'));
-});
+/*app.get('/login', (req, res) => {
+    res.render('login')
+})*/
 
+
+app.use('/register', rutasRegister);
+/*app.get('/register', (req, res) => {
+    res.render('register')});*/

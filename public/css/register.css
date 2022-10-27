@@ -1,106 +1,4 @@
 
-/*Header*/
-
-* {
-    margin: 0 px ;
-    padding: 0 px ;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    margin:0;
-}
-    
- 
-header {background-color: #EAC926;
-    margin-bottom: 3%;
-}
-
-.primeraSeccionHeader{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 4%;
-    align-items: flex-start;
-}
-
-img.Logo-ml {
-    width: 40%;
-    align-self: center;
-}
-
-.barra-busqueda-icono{
-    display: flex;
-    align-self: center;
-    gap: 1%;
-    margin-right: 10%;
- 
-}
-
-.barra-busqueda{
-    padding: 1px 1px;
-    height: 1.3em;
-    width: 15em;
-    left:10%;
-    text-indent: -1px;
-    align-self: center;
-  
-}
-
-
-
-
-#icono-lupa{
-    padding: 1% 1%;
-    background-color: white;
-    color: black;
-    height: 1.4em;
-    border: 1px solid #777777;
-    border-radius: 2px;
-    align-self: center;
-}
-
-
-
-.advertencia-compra-cuotas{
-    text-align: center;
-    align-self: center;
-
-}
-
-.burger-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    }
-
-.burger-menu i{
-    background-color:#03264C;
-    color: #ebebeb;
-    padding: 3%;
-    margin:5%;
-    border-radius: 10px;
-    font-size: 200%;
-    
-}
-
-
-a{
-    text-decoration: none;
-    color: black
-}
-
-
-.advertencia-compra-cuotas1{
-    display: none;
-}
-
-.advertencia-compra-cuotas2{
-    margin-left: 25%;
-}
-
-
 
 /*FOOTER*/
 
@@ -155,10 +53,6 @@ a{
 
 
 
-.navbar{
-    display: none;
-    
-}
 
 .section-articulos article section h3{
     display: none;
@@ -169,13 +63,17 @@ a{
 
 main{
     background-color: #ebebeb;
-    margin-top: -4%;
+
     
 }
 
 .espacio-Formulario{
     margin-top: 50px;
     margin-top: 3%
+}
+
+main{
+    margin-top: -1%;
 }
 
 .vida-sana{
@@ -275,12 +173,7 @@ p input{
         box-shadow: 0px 0px 10px rgba(0,0,0,0);
     }*/
 
-    header {background-color: #EAC926;
-        padding-bottom: 1%;
-
-        box-sizing: content-box;
-    }
-
+  
     .advertencia-compra-cuotas2{
         display: block;
         text-align: center;
@@ -304,44 +197,10 @@ p input{
       }
 
 
-    .navbar{
-        display: flex;   
-        flex-direction: row;
-        
-       
-    }
-   
 
-    .navbar ul {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        justify-content: space-around;
-        white-space: nowrap;
-        margin-right: 1%;
-            
-    }
-
-
-    .segundaSeccionHeader .navbar ul li{ 
-        padding-right: 20px;
-    
-    }
-    
-    .segunda-lista{
-        margin-right: 10px;
-        padding-right: 90px;
  
-    }
-
-    .segundaSeccionHeader .navbar{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start; /*hace que ninguna de las palabras vaya para abajo*/
-        margin-top: 2%;
-       
-
-    }
+    
+ 
 
   
 
@@ -406,11 +265,6 @@ p input{
        margin-left: 30%;
     }
 
-    .navbar{
-        display: flex;   
-        flex-direction: row;
-        gap: 5%;    
-    }
   
 
     .section-articulos article section h3{

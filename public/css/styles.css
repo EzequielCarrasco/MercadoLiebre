@@ -30,10 +30,7 @@ img.Logo-ml {
 .barra-busqueda-icono{
     display: flex;
     align-self: center;
-    gap: 1%;
-   
-    
- 
+    gap: 1%;  
 }
 
 .barra-busqueda{
@@ -47,16 +44,25 @@ img.Logo-ml {
 }
 
 
-
-
-#icono-lupa{
+.icon-botton{
+    background-color: white;
     padding: 1% 1%;
     background-color: white;
     color: black;
-    height: 1.4em;
+    height: 1.3em;
+    align-self: center;
     border: 1px solid #777777;
     border-radius: 2px;
+    display: flex;
+}
+
+#icono-lupa{
+    color: black;
+    justify-content: center;
     align-self: center;
+    align-items: center;
+    font-size: 90%;
+
 }
 
 
@@ -303,6 +309,7 @@ margin-left: 10px;
 
 h3.Titulares{font-size: 24px;
 width: 100%;
+text-align: center;
 }
 
 
@@ -372,6 +379,10 @@ img.Imagen-articulo{
     display: none;
 }
 
+footer p{
+    text-align: center;
+}
+
 
 
 @media (min-width: 481px){ /*TABLET*/
@@ -409,12 +420,7 @@ img.Imagen-articulo{
         
     }
 
-    .segundaSeccionHeader .navbar{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start; /*hace que ninguna de las palabras vaya para abajo*/
-        margin-top: 2%;
-    }
+
 
     .segundaSeccionHeader .navbar ul li{ 
         margin-right: 25px;

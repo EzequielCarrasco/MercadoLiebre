@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <form action="/" method="get">
+            <p>
+                <input type="text" id="nombre-Apellido" class="espacio-Formulario" name="nombre-apellido" placeholder="Nombre y Apellido" minlength="8" required>
+           
+            <p>
+                <input type="text" class="espacio-Formulario" name="nombre-usuario" placeholder="Nombre de usuario" required>
+            </p>
+            <p class="formulario-flex">
+                <label for="fecha-nacimiento" class="label-titulo">Fecha de Nacimiento:</label>
+                <input type="date" class="espacio-Formulario" name="fecha-nacimiento" placeholder="Fecha de Nacimiento">
+            </p>
+            <p>
+                <input type="text" class="espacio-Formulario" name="usuario" placeholder="Domicilio:" required>
+            </p>
+            <p class="formulario-flex">
+                <label for="perfil" class="label-titulo">Perfil del usuario:</label>
+                <label>
+                    <div class="formulario-comprador-vendedor" required>
+
+                        <input type="radio" value="perfil" name="perfil" id="perfil">
+                        Comprador
+                        <input type="radio" value="perfil" name="perfil" id="perfil">
+                        Vendedor
+
+                    </div>
+                </label>
+            </p>
+            <p class="formulario-flex">
+                <label class="label-titulo">Intereses</label>
+                <label>
+                    <div class="intereses-flex">
+                        <div>
+                            <input type="checkbox" value="perfil" name="perfil" id="perfil">
+                            <p>Electro</p>
+                        </div>
+                        <div class="intereses-flex">
+                         <div>
+                            <input type="checkbox" value="perfil" name="perfil" id="perfil">
+                            <p>Moda</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="perfil" name="perfil" id="perfil">
+                            <p>Hogar</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="perfil" name="perfil" id="perfil">
+                            <p>Juguetería</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" value="perfil" name="perfil" id="perfil">
+                            <p class="vida-sana">Vida Sana</p>
+                        </div>
+                    </div>
+                </label>
+
+            </p>
+            <p>
+                <input class="cargar-foto" type="file" name="avatar">
+            </p>
+            <p>
+                <input class = "contraseña" type="password" name="usuario" placeholder="Contraseña" required>
+            </p>
+            <p>
+                <input class ="contraseña" type="password" name="usuario" placeholder="Confirmar Contraseña" required>
+            </p>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>
